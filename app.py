@@ -6,7 +6,6 @@ def getIP():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) 
     s.connect(("8.8.8.8", 80)) 
     ip = s.getsockname()[0] 
-    print("akshath")
     print(ip) 
     s.close() 
     return str(hostname),str(ip) 
